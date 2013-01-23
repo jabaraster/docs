@@ -1,0 +1,99 @@
+@base-color: rgb(240, 240, 240);
+@main-color: rgb(130, 40, 40);
+@accent-color: rgb(255, 30, 80);
+
+@table-header-color: @base-color;
+@table-header-back: @main-color;
+@table-cell-back: rgb(255, 255, 255);
+
+body {
+    background: @base-color;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: @main-color;
+    text-shadow: rgba(150,100,100,0.3) 1px 1px;
+    box-shadow: rgba(0,0,0,0.3) 1px 1px;
+}
+
+h1 {
+    border-top: 1px solid;
+    border-left: 8px solid;
+    border-bottom: 1px solid;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: rgb(255,255,255);
+    font-weight: bold;
+    margin-top: 1em;
+    margin-left: 0.3em;
+    margin-bottom: 0.3em;
+    padding-left: 0.3em;
+}
+
+h2 {
+    margin-left: 0.5em;
+    padding-left: 0.3em;
+    border-left: 4px solid;
+    border-bottom: 1px solid;
+}
+
+h3 {
+    margin-left: 0.7em;
+    padding-left: 0.3em;
+    border-bottom: 1px solid;
+}
+
+h4 { margin-left: 0.9em; }
+h5 { margin-left: 1.1em; }
+h6 { margin-left: 1.3em; }
+
+h4, h5, h6 {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+p {
+    margin: 1em;
+}
+
+em {
+    font-weight: bolder;
+    font-style: italic;
+}
+
+strong {
+    color: @accent-color;
+    font-size: larger;
+    margin-right: 0.1em;
+    margin-left: 0.1em;
+}
+
+table {
+    margin: 0.5em;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th {
+    color: @base-color;
+    background: @main-color;
+}
+
+td {
+    background: rgb(255,255,255);
+}
+
+th, td {
+    border: 1px solid;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+pre {
+    margin: 2em;
+    border: solid 1px;
+    background: @table-cell-back;
+    code {
+        margin: 0.5em;
+    }
+}
